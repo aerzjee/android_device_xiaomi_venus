@@ -22,6 +22,10 @@ TARGET_OTA_ASSERT_DEVICE := venus
 TARGET_KERNEL_SOURCE := kernel/xiaomi/venus
 TARGET_KERNEL_CONFIG := vendor/venus-qgki_defconfig
 
+
+# Sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # Kernel modules
 BOOT_KERNEL_MODULES := \
     fts_touch_spi.ko \
